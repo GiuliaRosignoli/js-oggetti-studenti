@@ -90,7 +90,7 @@ if(!isNaN(userAge)){ // Is age field a number or not?
 }
 
 students.push(newStudent);
-console.log(newStudent);
+console.log(students);
 
     // end doc ready
 });
