@@ -7,6 +7,7 @@ Una volta creato il nuovo oggetto inserirlo nell'array creato al punto 2 e mostr
 
 $(document).ready(function(){ 
 
+
 var student = {
     firstname: "Jenna",
     lastName: "Smith",
@@ -53,7 +54,8 @@ for(var i = 0; i < students.length; i++) {
 
     console.log( studentLoop.firstName );
     console.log( studentLoop.lastName );
-}
+};
+
 
 // 3rd task
 
@@ -61,14 +63,14 @@ var newStudent = {}; // New object I do need
 
 var userName = prompt("Please insert your name here");
 if(userName(isNaN)){
-    newStudent.push(userName)
+    newStudent.push(userName);
 } else {
     userName = prompt("Not valid, please insert your age here");
 }
 
 var userLastName = prompt("Please insert your last name here");
 if(userLastName(isNaN)){
-    newStudent.push(userLastName)
+    newStudent.push(userLastName);
 } else {
     userLastName = prompt("Not valid, please insert your age here");
 }
