@@ -5,6 +5,7 @@ Una volta creato il nuovo oggetto inserirlo nell'array creato al punto 2 e mostr
 
 //1st task
 
+
 $(document).ready(function(){ 
 
 
@@ -61,28 +62,35 @@ for(var i = 0; i < students.length; i++) {
 
 var newStudent = {}; // New object I do need
 
-var userName = prompt("Please insert your name here");
-if(userName(isNaN)){
-    newStudent.push(userName);
+// Username
+var userName = prompt("Please insert your name here.");
+if(isNaN(userName)){
+    newStudent.userName = userName;
+    console.log(userName);
 } else {
-    userName = prompt("Not valid, please insert your age here");
+    userName = prompt("Not valid, please insert your name here.");
 }
 
-var userLastName = prompt("Please insert your last name here");
-if(userLastName(isNaN)){
-    newStudent.push(userLastName);
+// Last name
+var userLastName = prompt("Please insert your last name here.");
+if(isNaN(userLastName)){
+    newStudent.userLastName = userLastName;
+    console.log(userLastName);
 } else {
-    userLastName = prompt("Not valid, please insert your age here");
+    userLastName = prompt("Not valid, please insert your surname here.");
 }
 
-var userAge = prompt("Please insert your age here");
-if(userAge(!isNaN)){ // Is age field a number or not?
-    newStudent.push(userAge);
+// Age
+var userAge = prompt("Please insert your age here.");
+if(!isNaN(userAge)){ // Is age field a number or not?
+    newStudent.userAge = userAge;
+    console.log(userAge);
 } else {
-    userAge = prompt("Not valid, please insert your age here");
+    userAge = prompt("Not valid, please insert your age here.");
 }
 
-
+students.push(newStudent);
+console.log(newStudent);
 
     // end doc ready
 });
